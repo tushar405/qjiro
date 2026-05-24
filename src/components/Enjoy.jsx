@@ -15,7 +15,7 @@ const Enjoy = () => {
             </div>
 
             <div className="right">
-         <video className="lg:w-[35em] md:w-[35em] w-[30em]" autoPlay muted> <source src='/video/v1.mp4' type='video/mp4'/></video>
+         <video className="lg:w-[35em] md:w-[35em] w-[30em]" autoPlay muted loop> <source src='/video/v1.mp4' type='video/mp4'/></video>
             </div>
         </div>
 

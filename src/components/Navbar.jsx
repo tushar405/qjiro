@@ -1,44 +1,45 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from "./logo.png"
 
 export default function Navbar() {
-    return (
-        <div className=''>
-            <div className="flex justify-between lg:justify-around md:justify-around items-center
-             lg:py-5 md:py-5 py-5 px-5 lg:px-0 lg:mb-28 md:mb-28 mb-11 md:px-0 lg:mb-28 md:mb-28 mb-10">
-                <div className="left">
-                    <div className="netflix_logo">
-                        <img
-                            className=' w-28 lg:w-44 md:w-44'
-                            src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
-                            alt="logo"
-                        />
-                    </div>
-                </div>
+  return (
 
-                <div className="right">
-                    <div className="flex items-center ">
-                        <div className=" bg-[#111112] text-white mx-4 
-                        lg:px-5 md:px-5 px-3 py-1 rounded-md border-[1.5px] border-gray-600 hover:ring-2 hover:ring-gray-200 opacity-80 ">
-                            <select
-                                name=""
-                                id="" 
-                                className=' bg-transparent outline-none'
-                                >
-                                <option value="English">English</option>
-                                <option value="हिन्दी">हिन्दी</option>
-                            </select>
-                        </div>
+    <div className="flex justify-between items-center py-2 px-3 sm:px-5 md:px-8 lg:px-14 mb-5">
 
-                        <Link to={'/Login'}>
-                        <button
-                            className=' bg-[#e50815] hover:bg-[#d80c1a] text-white px-5 py-1.5 rounded-lg font-bold'>
-                            Sign In
-                        </button>
-                        </Link>
-                    </div>
-                </div>
-            </div>
+      <div className="shrink-0">
+        <img
+          className="w-[120px] sm:w-[140px] md:w-[220px] lg:w-[192px] drop-shadow-[0_0_20px_rgba(0,0,0,0.9)]"
+          src={logo}
+          alt="logo"
+        />
+      </div>
+
+      {/* Right */}
+      <div className="flex items-center gap-2 sm:gap-3">
+
+        {/* Language */}
+        <div className="bg-[#111112] text-white px-2 sm:px-3 md:px-5 py-1 rounded-md border border-gray-600 hover:ring-2 hover:ring-gray-200 opacity-80">
+
+          <select
+            className='bg-transparent outline-none text-xs sm:text-sm md:text-base'
+          >
+            <option value="English">English</option>
+            <option value="हिन्दी">हिन्दी</option>
+          </select>
+
         </div>
-    )
+
+        {/* Sign In */}
+        <Link to={'/Login'}>
+          <button
+            className='bg-[#e50815] hover:bg-[#d80c1a] text-white px-3 sm:px-4 md:px-5 py-1 rounded-lg font-bold text-xs sm:text-sm md:text-base whitespace-nowrap'>
+            Sign In
+          </button>
+        </Link>
+
+      </div>
+
+    </div>
+  )
 }

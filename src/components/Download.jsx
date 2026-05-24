@@ -6,7 +6,7 @@ export default function Download() {
             <div className="flex flex-wrap justify-evenly items-center lg:py-20 md:py-20 py-10 px-5 ">
                 <div className="left order-last lg:order-first md:order-first">
                     <div className="">
-                        <video className='lg:w-[20em] md:w-[20em] w-[20em] ' autoPlay={true} muted >
+                        <video className='lg:w-[20em] md:w-[20em] w-[20em] ' autoPlay={true} muted loop>
                             <source src="/video/v2.mp4" type="video/mp4" />
                         </video>
                     </div>

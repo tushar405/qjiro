@@ -6,7 +6,7 @@ const Faq = ({title , desc}) => {
   return (
     <div>
         <div className='faq-main px-5 mx-auto lg:max-w-6xl md:max-w-6xl px-5 text-white'>
-            <div>
+            <div> 
                 <div className='main mb-2 top bg-[#2d2d2d] hover:bg-[#414141] flex justify-between items-center px-5 py-5 cursor:pointer' onClick={()=> setOpen(!open)}>
                     <div className="left">
                         <h1 className='lg:text-2xl md:text-2xl text-xl'>{title}</h1>
